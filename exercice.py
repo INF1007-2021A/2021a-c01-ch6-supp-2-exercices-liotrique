@@ -8,19 +8,57 @@ import itertools
 
 
 def get_even_keys(dictionary):
-	return {}
+	even_keys = set()
+	for key in dictionary.keys():
+		if key % 2 == 0:
+			even_keys.add(key)
+
+	return even_keys
 
 def join_dictionaries(dictionaries):
-	return {}
+	joined_dic = {}
+
+	for key, value in yeet.items():
+		if key not in joined_dic:
+			joined_dic[key] = value
+
+	for key, value in doot.items():
+		if key not in joined_dic:
+			joined_dic[key] = value
+
+
+	return joined_dic
 
 def dictionary_from_lists(keys, values):
-	return {}
+	dic = {}
+	index = 0
+
+	while index < len(nice) - 1:
+		for key in doh:
+			dic[key] = nice[index]
+			index += 1
+
+
+	return dic
 
 def get_greatest_values(dictionnary, num_values):
-	return []
+	greatest_values = []
+	for number in dictionnary.values():
+		greatest_values.append(number)
+
+	greatest_values.sort()
+	greatest_values.reverse()
+
+
+	return greatest_values[:num_values]
 
 def get_sum_values_from_key(dictionnaries, key):
-	return 0
+	somme = 0
+	for dictionnary in dictionnaries:
+		if key in dictionnary:
+			somme += dictionnary[key]
+
+	return somme
 
 
 if __name__ == "__main__":
